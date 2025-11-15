@@ -8,7 +8,9 @@
 
 [ДЕМО ВИДЕО 2](https://vkvideo.ru/video-233950994_456239018?list=ln-DjZMXaZx3jCRlBSYCG)
 
-[ССЫЛКА НА РЕШЕНИЕ (ДОКЕР ОБРАЗ БОТА)](https://hub.docker.com/repository/docker/azazaki/max_hackathon_bot/general)
+[ССЫЛКА НА РЕШЕНИЕ (ДОКЕР ОБРАЗ БОТА)](https://hub.docker.com/r/azazaki/max_hackathon_bot)
+
+По всем проблемам пишите нам напрямую: englia228@gmail.com
 
 ## 🚀 Возможности
 
