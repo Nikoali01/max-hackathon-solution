@@ -1,0 +1,36 @@
+# Go Dependencies для проекта University Bot
+# Версии указаны согласно go.mod
+
+# Основные зависимости
+github.com/max-messenger/max-bot-api-client-go==v1.0.3
+github.com/redis/go-redis/v9==v9.7.0
+github.com/rs/zerolog==v1.34.0
+github.com/spf13/viper==v1.21.0
+github.com/caarlos0/env/v6==v6.10.1
+
+# Косвенные зависимости
+github.com/cespare/xxhash/v2==v2.2.0
+github.com/dgryski/go-rendezvous==v0.0.0-20200823014737-9f7001d12a5f
+github.com/fsnotify/fsnotify==v1.9.0
+github.com/go-viper/mapstructure/v2==v2.4.0
+github.com/mattn/go-colorable==v0.1.13
+github.com/mattn/go-isatty==v0.0.19
+github.com/pelletier/go-toml/v2==v2.2.4
+github.com/sagikazarmark/locafero==v0.11.0
+github.com/sourcegraph/conc==v0.3.1-0.20240121214520-5f936abd7ae8
+github.com/spf13/afero==v1.15.0
+github.com/spf13/cast==v1.10.0
+github.com/spf13/pflag==v1.0.10
+github.com/subosito/gotenv==v1.6.0
+go.yaml.in/yaml/v3==v3.0.4
+golang.org/x/sys==v0.29.0
+golang.org/x/text==v0.28.0
+gopkg.in/yaml.v2==v2.4.0
+
+# Версия Go
+go==1.23.4
+
+# Примечание: Это Go проект, поэтому зависимости управляются через go.mod и go.sum
+# Для установки зависимостей используйте: go mod download
+# Для обновления зависимостей используйте: go get -u ./...
+
