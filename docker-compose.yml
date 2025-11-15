@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  bot:
+    image: azazaki/max_hackathon_bot:latest
+    container_name: max_bot
+    depends_on:
+      - redis
+    env_file:
+      - .env
+
+  redis:
+    image: redis:latest
+    container_name: redis_max_bot
+    volumes:
+      - ./redisData:/data
+    ports:
+      - "6379:6379"
+    env_file:
+      - .env
