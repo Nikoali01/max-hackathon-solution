@@ -1,0 +1,46 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+        mail:
+            smtp:
+              auth: true
+              starttls:
+                enable: true
+              ssl:
+                trust: smtp.gmail.com
+  datasource:
+    url: jdbc:postgresql://localhost:5432/university_db
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: HikariPool
+      max-lifetime: 30000
+      connection-timeout: 15000
+      maximum-pool-size: 10
+      idle-timeout: 10000
+      minimum-idle: 2
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        order_updates: true
+    open-in-view: false
+  liquibase:
+    change-log: classpath:/liquibase/changelog.yaml
+    enabled: true
+    default-schema: public
+    user: admin
+    password: admin
+
+logging:
+  level:
+    liquibase: DEBUG

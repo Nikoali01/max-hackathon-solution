@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: 00.000.01
+      author: nick
+      changes:
+        - tagDatabase:
+            tag: 00.000.01
+
+  - include:
+      file: users-creation.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: courses-creation.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: students-creation.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: news-feed-creation.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: lessons-creation.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: tickets-creation.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: allowed-users.sql
+      relativeToChangelogFile: true
+

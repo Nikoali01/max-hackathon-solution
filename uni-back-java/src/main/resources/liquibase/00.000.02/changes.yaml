@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 00.000.02
+      author: nick
+      changes:
+        - tagDatabase:
+            tag: 00.000.02
+
+  - include:
+      file: insert-mocks-users.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: insert-mocks-courses.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: insert-mocks-news.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: insert-allowed-users.sql
+      relativeToChangelogFile: true
